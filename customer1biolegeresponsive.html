@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My family details
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+         <style>
+             l:hover{
+                 background-color: #141B41;
+             }
+             .nav {
+                background-color: #141B41 ;
+            }
+            .nav>li>a {
+                background-color: #141B41 ;
+                color: #fff;
+            }
+            .add{
+                margin-right: 4em;
+            }
+         </style>
+    </head>
+    <body style="background-color: #141B41;">
+        <div class="container mt-sm-5">
+           
+            <div class="row">
+                <div class="col-sm-2 mt-sm-5 py-sm-4 left-pane rounded " style="background-color: #FF8900; color: white;"><l>
+                     Dashboard<br></l>
+                   <l> Customer </l>
+                </div>
+                
+                    <div class="col-sm-10 rounded ">
+                    <div class="col-sm-12">
+                        <div class="float-left">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Diagnostics</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Appointments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pharma-tab" data-toggle="tab" href="#pharma" role="tab" aria-controls="pharma" aria-selected="false">Pharmaceuticals</a>
+                          </li>
+                      </ul>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" style="background-color: white;">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-xs-2 mr-xs-auto ml-sm-5 mt-sm-5">
+                                            <h3>User</h3>
+                                        </div>
+                                        <div class="col-xs-3 mt-sm-5 mr-xs-5 ml-sm-auto add">
+                                            <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                              </svg>
+                                            <button type="button" class="btn btn-sm btn-light px-sm-4 rounded-pill" style="background-color: #FF8900; color: white;">+Add Users</button>    
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="col-sm-12 mt-sm-5">
+                                            <div class="row">
+                                                <div class="col-sm-3 ml-sm-5" style="font-size: 15px;">
+                                                    Name
+                                                </div>
+                                                <div class="col-sm-3 offset-sm-2" style="font-size: 15px;">
+                                                    Location
+                                                </div>
+                                                <div class="col-sm-2 " style="font-size: 15px;">
+                                                    Status
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 mt-sm-3">
+                                            <div class="row ">
+                                                <div class="col-sm-1 ">
+                                                    <div class="border ml-sm-3" style="border-radius:60px; height: 2em;width:2em; background-color: rgb(170, 166, 168);"></div>
+                                                </div>
+                                                <div class="col-sm-7 ml-xs-n4" style="font-size: 12px;">
+                                                    Chaggulal Chatriwala
+                                                </div>
+                                                <div class="col-sm-2 offset-sm-1" style="color: rgb(9, 201, 9); font-size: 12px;">
+                                                    App
+                                                </div>
+                                                <div class="col-sm-1 ml-sm-n4" style="font-size: 12px;">
+                                                    <a href=# style="color: black;">View</a>
+                                                </div>
+                                                <div class="col-sm-11 ml-sm-4">
+                                                    <hr style="height:0.5px;border-width:0;background-color: rgb(201, 199, 199)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 mt-sm-2">
+                                            <div class="row ">
+                                                <div class="col-sm-1 ">
+                                                    <div class="border ml-sm-3" style="border-radius:60px; height: 2em;width:2em; background-color: rgb(170, 166, 168);"></div>
+                                                </div>
+                                                <div class="col-sm-7 ml-xs-n4" style="font-size: 12px;">
+                                                    Bahattar Singh
+                                                </div>
+                                                <div class="col-sm-2 offset-sm-1" style="color: red; font-size: 12px;">
+                                                    Offline
+                                                </div>
+                                                <div class="col-sm-1 ml-sm-n4">
+                                                    <a href=# style="color: black; font-size: 12px;" >View</a>
+                                                </div>
+                                                <div class="col-sm-11 ml-sm-4">
+                                                    <hr style="height:0.5px;border-width:0;background-color: rgb(201, 199, 199)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
