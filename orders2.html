@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+         <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="/bootstrap/scripts/jquery.min.js"></script>
+         <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <title>orders</title>
+    <style>
+        .cont{
+            background-color: #141B41;
+        }
+        .drkbg{
+            color: white;
+            font-size: 14px;
+        }
+        .drkbg:hover{
+            color: white;
+            text-decoration: none;
+        }
+        .bld{
+            font-size: 20px;
+            font-weight: 600;
+            color: #141B41;
+        }
+        .circle1{
+            background-color: #E5E5E5; 
+            width: 40px; 
+            height: 40px;
+        }
+        .weight{
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .font-red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid cont mt-sm-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 py-sm-2"><a class="drkbg" href=#>Orders</a></div>
+                <div class="col-sm-3 py-sm-2"><a class="drkbg" href=#>Sample Collected</a></div>
+                <div class="col-sm-2 py-sm-2"> <a class="drkbg" href=#>Pending</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-sm-5">
+            <div class="col-sm-3  bld">Orders</div>
+            <div class="col-sm-3 ml-sm-auto bld text-right">April 24,2020
+                <svg aria-hidden="true" focusable="false" data-prefix="far" width="1em" height="1em" data-icon="calendar-alt" class="svg-inline--fa fa-calendar-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"></path></svg></div>
+        </div>
+        <div class="row mt-sm-5">
+            <table class="table table-borderless">
+                <thead>
+                  <tr class="shadow">
+                    <th scope="row"></th>
+                    <td class="py-4 weight">Name</th>
+                    <td class="py-4 weight">Tests Order</th>
+                    <td class="py-4 weight">Laboratory</th>
+                    <td class="py-4 weight">Age</th>
+                    <td class="py-4 weight">Gender</th>
+                    <td class="py-4 weight">Sample Collected</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom">
+                    <td scope="row"><div class="rounded-circle circle1"></div></td>
+                    <td class="py-4 weight">Babur Ahmed</td>
+                    <td class="py-4 weight">TSH,PPBS</td>
+                    <td class="py-4 weight pl-3">Thyrocare</td>
+                    <td class="py-4 weight">56</td>
+                    <td class="py-4 weight">Female</td>
+                    <td class="py-4 weight font-red pl-5">Pending</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <th scope="row"><div class="rounded-circle circle1"></div></th>
+                    <td class="py-4 weight">Babur Ahmed</td>
+                    <td class="py-4 weight">Uric Acid</td>
+                    <td class="py-4 weight pl-3">HAMM</td>
+                    <td class="py-4 weight">45</td>
+                    <td class="py-4 weight">Female</td>
+                    <td class="py-4 weight font-red pl-5">Pending</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    
+</body>
+</html>
