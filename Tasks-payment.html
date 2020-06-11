@@ -12,17 +12,40 @@
          <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <script src="/bootstrap/scripts/jquery.min.js"></script>
          <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <style>
+            .body{
+                background-color: aliceblue;
+            }
+            .container-background{
+                background-color: white;
+            }
+            .payment-style{
+                font-size: 24px; 
+                font-weight: 600;
+            }
+            .hr-style{
+                height:0.5px;
+                border-width:0;
+                background-color:#EBEBEB;
+            }
+            .weight{
+                font-weight: 600;
+            }
+            .button-style{
+                background-color: rgb(212, 212, 212);
+            }
+        </style>
     </head>
-    <body style="background-color: aliceblue;">
-       <div class="container my-5 " style="background-color: white;">
+    <body>
+       <div class="container my-5 shadow container-background" >
             <div class="row ">
-                <div class="col mt-5 mx-5 " style="font-size: 24px; font-weight: 600;">
+                <div class="col mt-5 mx-5 payment-style" >
                     Payment
-                    <hr style="height:0.5px;border-width:0;background-color:rgb(211, 210, 210)">
+                    <hr class="hr-style">
                 </div>
             </div>
             <div class="row">
-                <div class="col-8  mt-3 mr-3" style="font-weight: 600;">
+                <div class="col-8  mt-3 mr-3 weight">
                     <div class="row">
                         <div class="col-5 ml-5 mr-n5">
                             Amount to be collected     
@@ -37,7 +60,7 @@
                         </div>
                         <div class="col-7 mt-3 ml-n5">
                             <div class="dropdown">
-                                <button class="btn btn-light btn-sm pl-5 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgb(212, 212, 212);">
+                                <button class="btn btn-light btn-sm pl-5 dropdown-toggle button-style" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                   
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -47,8 +70,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-100"></div><br><br><br><br><br><br>
-                        <div class="col">
+                        <div class="w-100 mt-5 mb-5"></div>
+                        <div class="col mt-5">
                             <a href="#"><button class="btn btn-warning btn-sm ml-5 px-4 ">Done</button></a>
                         </div>
                     </div>
@@ -57,7 +80,7 @@
                     <div class="row" style="font-size: 12px;">
                         <div class="col">
                             <h5>Price</h5>
-                            <hr style="height:0.5px;border-width:0;background-color:#EBEBEB">
+                            <hr class="hr-style">
                         </div>
                         <div class="w-100"></div>
                         <div class="col-9">
@@ -88,7 +111,7 @@
                         </div>
                         <div class="w-100"></div>
                         <div class="col">
-                            <hr style="height:0.5px;border-width:0;background-color:#EBEBEB">
+                            <hr class="hr-style">
                         </div>
                         <div class="w-100"></div>
                         <div class="col-9">
@@ -113,7 +136,7 @@
                          </div>
                          <div class="w-100"></div>
                          <div class="col-12">
-                            <hr style="height:0.5px;border-width:0;background-color:#EBEBEB">
+                            <hr class="hr-style">
                         </div>
                         <div class="col-9">
                             Total amount
