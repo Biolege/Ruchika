@@ -18,23 +18,47 @@
             width: 150px; 
             height: 150px;
        }
+       @media only screen and (max-width: 768px) {
+           .tas{
+                margin-left: 60px;
+                
+           }
+           
+           .name{
+               font-size: 20px;
+               margin-top: 10px;
+           }
+           .muted{
+               font-size: 18px;
+           }
+       }
+       @media only screen and (min-width: 600px){
+            .tas{
+                margin-left: 120px;
+            }
+       }
+       @media only screen and (min-width: 900px){
+           .tas{
+               margin-left: 0px;
+           }
+       }
        
     </style>
 </head>
 <body>
-    <div class="container border shadow p-3 mb-5 bg-white rounded py-sm-5 mt-sm-5">
-        <div class="row my-sm-4 ">
+    <div class="container ">
+        <div class="row my-4 border shadow p-3 mb-5 bg-white rounded py-5 mt-5 mx-3">
             <div class="col-sm-12 text-center">
-               <h2> WELCOME</h2>
+                <h2>WELCOME</h2>
             </div>
             <div class="col-md-2 mx-auto py-sm-3 text-center">
-                <div class="rounded-circle circle1"></div>
+                <div class="rounded-circle circle1 tas"></div>
             </div>
             <div class="col-sm-12 text-center pt-sm-1 mb-sm-3">
-                <h3>Mr. Name</h3>
+                <h3 class="name">Mr. Name</h3>
             </div>
             <div class="col-sm-12 text-center text-muted">
-                <h5>Your contribution is very valuable to us</h5>
+                <h5 class="muted">Your contribution is very valuable to us</h5>
             </div>
         </div>
     </div>
