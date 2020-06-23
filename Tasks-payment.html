@@ -4,6 +4,8 @@
         <title>
             Payment
         </title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,31 +36,43 @@
             .button-style{
                 background-color: rgb(212, 212, 212);
             }
+            @media only screen and (max-width: 768px){
+                .col-sm-5{
+                    width: 70%;
+                }
+                .col-sm-7{
+                    width: 30%;
+                }
+                .button-done{
+                    margin-left: 13em;
+                }   
+            }
+            
         </style>
     </head>
     <body>
-       <div class="container my-5 shadow container-background" >
+       <div class="container my-sm-5 shadow container-background" >
             <div class="row ">
-                <div class="col mt-5 mx-5 payment-style" >
+                <div class="col mt-5 mx-4 payment-style" >
                     Payment
                     <hr class="hr-style">
                 </div>
             </div>
             <div class="row">
-                <div class="col-8  mt-3 mr-3 weight">
+                <div class="col-sm-8 col-md-7  mt-3 mr-3 weight">
                     <div class="row">
-                        <div class="col-5 ml-5 mr-n5">
+                        <div class="col-sm-5 col-md-7 ml-5 mr-n5">
                             Amount to be collected     
                         </div>
-                        <div class="col-7 ml-n5">                    
+                        <div class="col-sm-7 col-md-5">                    
                             <svg aria-hidden="true" height="0.6em" width="0.5em"focusable="false" data-prefix="fas" data-icon="rupee-sign" class="svg-inline--fa fa-rupee-sign fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"></path></svg>
                             2290
                         </div>
                         <div class="w-100"></div>
-                        <div class="col-5 mt-3 mr-n5 ml-5">
+                        <div class="col-sm-5 col-md-7 mt-3 mr-n5 ml-5">
                             Cash Collected
                         </div>
-                        <div class="col-7 mt-3 ml-n5">
+                        <div class="col-sm-7 col-md-5 mt-3">
                             <div class="dropdown">
                                 <button class="btn btn-light btn-sm pl-5 dropdown-toggle button-style" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                   
@@ -71,12 +85,12 @@
                             </div>
                         </div>
                         <div class="w-100 mt-5 mb-5"></div>
-                        <div class="col mt-5">
+                        <div class="col-sm mt-5 button-done">
                             <a href="#"><button class="btn btn-warning btn-sm ml-5 px-4 ">Done</button></a>
                         </div>
                     </div>
                  </div>
-                 <div class="col-3 mt-3 ml-4 mr-5">
+                 <div class="col-sm-3 col-md-3 mt-3 ml-4 mr-5">
                     <div class="row" style="font-size: 12px;">
                         <div class="col">
                             <h5>Price</h5>
