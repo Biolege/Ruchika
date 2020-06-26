@@ -10,6 +10,12 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <style>
+      .body{
+        background-color: aliceblue;
+      }
+      .row-1{
+        background-color: white;
+      }
       .hovr:hover{
         background-color: #141B41;
         color: white;
@@ -22,57 +28,84 @@
         background-color: white;
         color:#141B41;
       }
+      .button-style{
+        background-color: rgba(187,185, 185, 0.603);
+      }
+      .h{
+        height:0.5px;border-width:0;background-color:#808080;
+      }
+      .green-text{
+        font-size: 10px; color: rgb(31, 187, 31);
+      }
+      .font-13{
+        font-size: 13px;
+      }
+      .font-19{
+        font-size: 19px;
+      }
+      .font-12{
+        font-size: 12px;
+      }
+      .font-10{
+        font-size: 10px;
+      }
+      .profile{
+        background-color: #B4D7FF;
+      }
+      .green-text-1{
+        font-size:14px; color:  rgb(31, 187, 31);
+      }
     </style>
 </head>
-    <body style="background-color: aliceblue;">
-        <div class="container mt-sm-4 border rounded" style="background-color: white;">
+    <body class="body">
+        <div class="container mt-sm-4 border rounded row-1" >
           <div class="row py-sm-3">
-              <div class="col-sm-3 pl-sm-5">
-                <div type="button" class="btn btn-secondary btn-sm justify-content-end border-0 text-muted" style="background-color: rgba(187,185, 185, 0.603);">
+              <div class="col-lg-3 col-sm-5 pl-lg-5">
+                <div type="button" class="btn btn-secondary btn-sm justify-content-end border-0 text-muted button-style">
                   <svg aria-hidden="true" height="1em" width="1em" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg> Location(Pin Code)</div>
               </div>
-              <div class="col-sm-3">
-                <div type="button" class="btn btn-secondary btn-sm justify-content-end border-0 text-muted pr-sm-5" style="background-color: rgba(187,185, 185, 0.603);">+Add more tests</div>
+              <div class="col-lg-3 col-sm-5 mt-3 mt-sm-0">
+                <div type="button" class="btn btn-secondary btn-sm justify-content-end border-0 text-muted pr-sm-5 button-style" >+Add more tests</div>
               </div>
-              <div class="col-sm-3">
-                <div type="button" class="btn btn-secondary btn-sm justify-content-end border-0 text-muted pr-sm-5 text-left" style="background-color: rgba(187,185, 185, 0.603);">lab</div>
+              <div class="col-lg-3 col-sm-2 mt-3 mt-sm-0 mb-3 mb-sm-0">
+                <div type="button" class="btn btn-secondary btn-sm justify-content-end border-0 text-muted pr-sm-5 text-left button-style">lab</div>
               </div>
-              <div class="col-sm-4"></div>
+              <div class="col-lg-4"></div>
           </div>
         </div>
         <div class="container mt-sm-5" >
             <div class="row " >
-                <div class="col-sm-8  border pt-sm-4 pl-sm-4 rounded" style="background-color: white;">
-                    <h1>Thyroid Profile, Totals</h1>
-                    <hr style="height:0.5px;border-width:0;background-color:#808080">
+                <div class="col-lg-8 col-md-12 border pt-sm-4 pl-sm-4 rounded mt-4 mt-sm-0 row-1">
+                    <h2 class="mt-3 mt-sm-0">Thyroid Profile, Totals</h2>
+                    <hr class="h">
                     <div class="row">
-                        <div class="col-sm-3 pt-sm-2" style="font-size: 19px;"><b>Tests Included</b></div>
-                        <div class="col-sm-2 pt-sm-2"><h7>T3,T4,TSH</h7></div>
-                        <div class="col-sm-2 offset-md-3"> <a href="#" type="button" class="btn btn-sm btn-outline-dark hovr" >Add to cart</a></div>
-                        <div class="col-sm-2"><a href="#" type="button" class="btn btn-sm btn-dark hovrr">Book Now</a></div>
+                        <div class="col-md-3 col-6 pt-sm-2 font-19"><b>Tests Included</b></div>
+                        <div class="col-md-2 col-6 pt-sm-2"><h7>T3,T4,TSH</h7></div>
+                        <div class="col-md-2 offset-md-3 mt-3 mt-md-0 col-6"> <a href="#" type="button" class="btn btn-sm btn-outline-dark hovr" >Add to cart</a></div>
+                        <div class="col-md-2 mt-3 mt-md-0 col-6"><a href="#" type="button" class="btn btn-sm btn-dark hovrr">Book Now</a></div>
                     </div>
                     <div class="row">
-                      <div class="col-auto ml-auto" style="font-size: 10px; color: rgb(31, 187, 31);">*Get upto 20% discount</div>
+                      <div class="col-6 col-md-auto ml-auto text-left green-text">*Get upto 20% discount</div>
                     </div><br>
                     <div class="row">
-                      <div class="col-3" style="font-size: 13px"><b>Total Parameters</b></div>
-                      <div class="col-3" style="font-size: 13px">3</div>
+                      <div class="col-md-3 col-5 font-13" ><b>Total Parameters</b></div>
+                      <div class="col-md-3 col-7 font-13" >3</div>
                       <div class="w-100"></div>
-                      <div class="col-3 pt-2" style="font-size: 13px"><b>Sample Type</b></div>
-                      <div class="col-3 pt-2" style="font-size: 13px">Blood</div>
+                      <div class="col-md-3 col-5 pt-2 font-13" ><b>Sample Type</b></div>
+                      <div class="col-md-3 col-7 pt-2 font-13" >Blood</div>
                       <div class="w-100"></div>
-                      <div class="col-3 pt-2" style="font-size: 13px"><b>Test preparations</b></div>
-                      <div class="col-5 pt-2" style="font-size: 13px">No special preparation required</div>
+                      <div class="col-md-3 col-5 pt-2 font-13" ><b>Test preparations</b></div>
+                      <div class="col-md-5 col-7 pt-2 font-13" >No special preparation required</div>
                       <div class="w-100"></div>
-                      <div class="col-3 pt-2" style="font-size: 13px"><b>Report Delivery</b></div>
-                      <div class="col-3 pt-2" style="font-size: 13px">Within 24hr-48hrs</div>
+                      <div class="col-md-3 col-5 pt-2 font-13" ><b>Report Delivery</b></div>
+                      <div class="col-md-3 col-7 pt-2 font-13" >Within 24hr-48hrs</div>
                     </div><br><br>
                     <div class="row">
                       <div class="col"><h3>Select Laboratory</h3>
-                      <hr style="height:0.5px;border-width:0;background-color: #EBEBEB"></div>
+                      <hr class="h"></div>
                     </div>
                     <div class="row">
-                      <div class="col-2">
+                      <div class="col-lg-2 col-md-6">
                       <div class="card shadow p-3 mb-5 bg-white">
                         <img class="card-img-top" src="...">
                         <div class="card-body">
@@ -81,7 +114,7 @@
                       </div>
                     </div>  
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-md-6">
                         <div class="card shadow p-3 mb-5 bg-white">
                           <img class="card-img-top" src="...">
                           <div class="card-body">
@@ -90,7 +123,8 @@
                         </div>
                       </div>  
                         </div>
-                        <div class="col-2">
+                        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 2 on md--></div>
+                        <div class="col-lg-2 col-md-6">
                           <div class="card shadow p-3 mb-5 bg-white">
                             <img class="card-img-top" src="...">
                             <div class="card-body">
@@ -99,7 +133,7 @@
                           </div>
                         </div>  
                           </div>
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-6">
                             <div class="card shadow p-3 mb-5 bg-white">
                               <img class="card-img-top" src="...">
                               <div class="card-body">
@@ -108,7 +142,9 @@
                             </div>
                           </div>  
                             </div>
-                            <div class="col-2">
+                            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 2 on md--></div>
+                            
+                            <div class="col-lg-2 col-md-6">
                               <div class="card shadow p-3 mb-5 bg-white">
                                 <img class="card-img-top" src="...">
                                 <div class="card-body" >
@@ -119,49 +155,49 @@
                               </div>
                     </div>
                     <div class="row mt-4">
-                      <div class="col-sm-1 ml-4 mr-n3  pl-1">
+                      <div class="col-lg-1 col-2 ml-lg-4 ml-2 mr-n3  pl-1">
                         <svg class="bi bi-house-door-fill" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path d="M6.5 10.995V14.5a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
                           <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
                         </svg>
                       </div>
-                      <div class="col-3 mr-n4" ><b style="font-size: 12px;">Free home sample pickup.</b>
-                        <p style="font-size: 10px;">Sample will be collected by a certified professional from your location.</p></div>
-                      <div class="col-1 mr-n2">
+                      <div class="col-lg-3 col-10 mr-n4" ><b class="font-12">Free home sample pickup.</b>
+                        <p class="font-10">Sample will be collected by a certified professional from your location.</p></div>
+                      <div class="col-lg-1 col-2 mr-n2">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-medical" width="3em" height="3em" class="svg-inline--fa fa-file-medical fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-153 31V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 160v48c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8z"></path></svg>
                       </div>
-                      <div class="col-4 mr-n5"><b style="font-size: 12px;">E-reports and report delivery</b>
-                        <p style="font-size: 10px;">Get your report within 24hr-48hr and access anytime from your account.</p>
+                      <div class="col-lg-4 col-10 mr-n5"><b class="font-12">E-reports and report delivery</b>
+                        <p class="font-10">Get your report within 24hr-48hr and access anytime from your account.</p>
                       </div>
-                      <div class="col-1 mr-n1"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="microscope" width="3em" height="3em"class="svg-inline--fa fa-microscope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M160 320h12v16c0 8.84 7.16 16 16 16h40c8.84 0 16-7.16 16-16v-16h12c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32V16c0-8.84-7.16-16-16-16h-64c-8.84 0-16 7.16-16 16v16c-17.67 0-32 14.33-32 32v224c0 17.67 14.33 32 32 32zm304 128h-1.29C493.24 413.99 512 369.2 512 320c0-105.88-86.12-192-192-192v64c70.58 0 128 57.42 128 128s-57.42 128-128 128H48c-26.51 0-48 21.49-48 48 0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48zm-360-32h208c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8H104c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8z"></path></svg></div>
-                      <div class="col-3"><b style="font-size: 12px;">Certified Laboratories</b>
-                      <p style="font-size: 10px;">We have collaborated with caertified labs to ensure high accuracy of your report.</p>
+                      <div class="col-lg-1 col-2 mr-n1"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="microscope" width="3em" height="3em"class="svg-inline--fa fa-microscope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M160 320h12v16c0 8.84 7.16 16 16 16h40c8.84 0 16-7.16 16-16v-16h12c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32V16c0-8.84-7.16-16-16-16h-64c-8.84 0-16 7.16-16 16v16c-17.67 0-32 14.33-32 32v224c0 17.67 14.33 32 32 32zm304 128h-1.29C493.24 413.99 512 369.2 512 320c0-105.88-86.12-192-192-192v64c70.58 0 128 57.42 128 128s-57.42 128-128 128H48c-26.51 0-48 21.49-48 48 0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16 0-26.51-21.49-48-48-48zm-360-32h208c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8H104c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8z"></path></svg></div>
+                      <div class="col-lg-3 col-10"><b class="font-12">Certified Laboratories</b>
+                      <p class="font-10">We have collaborated with caertified labs to ensure high accuracy of your report.</p>
                       </div>
                     </div><br>
                     <div class="row">
                       <div class="col">
                         <h2>About the Test</h2>
-                        <hr style="height:0.5px;border-width:0;background-color: #EBEBEB">
+                        <hr class="h">
                       </div>
                       <div class="w-100"></div>
                       <div class="col">
                         <p style="font-size: 15px;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                       </div>
-                    </div> <br><br><br><br><br>
+                    </div>
                 </div>
-                <div class="col-3 offset-md-1" style="background-color: aliceblue">
-                <div class="row border" style="background-color: white;">
+                <div class="col-lg-3 offset-lg-1 mt-sm-4 mt-lg-0 body">
+                <div class="row border row-1">
                   <div class="col mt-4"><h3>Tests Selected</h3>
-                  <hr style="height:0.5px;border-width:0;background-color: #808080"></div>
+                  <hr class="h"></div>
                   <div class="w-100"></div>
                   <div class="col text-muted">1 tests selected</div>
                   <div class="w-100"></div>
-                  <div class="col mt-1" ><div type="button" class=" rounded mr-5 pl-1" style="background-color: #B4D7FF;">Thyroid Profile</div></div>
+                  <div class="col mt-1 " ><div type="button" class="profile rounded mr-5 pl-1">Thyroid Profile</div></div>
                   <div class="w-100"></div>
-                  <div class="col mt-1" ><button type="button" class="btn-sm btn btn-light" style="font-size:14px; color:  rgb(31, 187, 31);">+ADD MORE TESTS</button></div>
+                  <div class="col mt-1" ><button type="button" class="btn-sm btn btn-light green-text-1">+ADD MORE TESTS</button></div>
                   <div class="w-100"></div><br><br><br><br>
                   <div class="col"><b>Lab Selected</b></div>
-                  <div class="col"><div type="button" class=" rounded mr-3 pl-1" style="background-color: aliceblue">t</div> </div>
+                  <div class="col"><div type="button" class=" rounded mr-3 pl-1 body" >t</div> </div>
                   <div class="w-100"></div>
                   <div class="col mt-2"><b>Total Price</b></div>
                   <div class="col mt-2 pl-5">
@@ -171,20 +207,20 @@
                   <div class="w-100"></div>
                   <div class="col text-center my-3"><a href="#" type="button" class="btn btn-sm btn-dark rounded px-4 py-1 text-monospace hovrr" >Proceed</a></div>
                 </div>
-                <div class="row border mt-4" style="background-color: white;">
-                  <div class="col mt-3"><h4>Other Lab Prices</h4>
-                    <hr style="height:0.5px;border-width:0;background-color: #808080"> 
+                <div class="row border mt-4 row-1">
+                  <div class="col-md mt-3"><h4>Other Lab Prices</h4>
+                    <hr class="h"> 
                   </div>
                   <div class="w-100"></div>
                   <div class="col-6 ml-n2">
                     <div class="row">
-                      <div class="col shadow p-3 mb-5 bg-white rounded ml-3" style="font-size: 12px;">Laboratory Name
+                      <div class="col shadow p-3 mb-5 bg-white rounded ml-3 font-12" >Laboratory Name
                          <div class="row">
                            <div class="col">
                             <button type="button" class="btn btn-secondary px-5"><img url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqmHWbvCFuFktB83EWS0990EzUV6uITAU-ghFYwVn0mPWN6T2X&usqp=CAU"></button>
                            </div>
                               <div class="row">
-                                <div class="col ml-5 mr-n5" style="text-align: right;">
+                                <div class="col ml-lg-5 mr-n5 ml-n5" style="text-align: right;">
                                   <svg aria-hidden="true" height="0.5em" width="0.5em"focusable="false" data-prefix="fas" data-icon="rupee-sign" class="svg-inline--fa fa-rupee-sign fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"></path></svg>
                                   <b>660</b>  
                                 </div>
@@ -195,13 +231,13 @@
                   </div>
                   <div class="col-6">
                     <div class="row">
-                      <div class="col shadow p-3 mb-5 bg-white rounded ml-3" style="font-size: 12px;">Laboratory Name
+                      <div class="col shadow p-3 mb-5 bg-white rounded ml-3 font-12">Laboratory Name
                          <div class="row">
                            <div class="col">
                             <button type="button" class="btn btn-secondary px-5"><img url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqmHWbvCFuFktB83EWS0990EzUV6uITAU-ghFYwVn0mPWN6T2X&usqp=CAU"></button>
                            </div>
                               <div class="row">
-                                <div class="col ml-5 mr-n5" style="text-align: right;">
+                                <div class="col ml-lg-5 mr-n5 ml-n5" style="text-align: right;">
                                   <svg aria-hidden="true" height="0.5em" width="0.5em"focusable="false" data-prefix="fas" data-icon="rupee-sign" class="svg-inline--fa fa-rupee-sign fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"></path></svg>
                                   <b>660</b>  
                                 </div>
@@ -211,9 +247,9 @@
                       </div>
                   </div>
                 </div>
-                <div class="row rounded border mt-4" style="background-color: white;">
+                <div class="row rounded border mt-4 row-1">
                   <div class="col mt-3"><h4>Popular Tests</h4>
-                    <hr style="height:0.5px;border-width:0;background-color: #808080"></div>
+                    <hr class="h"></div>
                     <div class="w-100"></div>
                     <div class="col-8 mt-2" style="font-size: 18px;"> Hb1Ac</div>
                     <div class="col-4 mt-2"><a href="#" type="button" class="btn btn-sm btn-dark px-3" style="font-size: 12px;background-color: #141B41; color: white; padding-top: 0px; padding-bottom: 0px">+</a></div>
