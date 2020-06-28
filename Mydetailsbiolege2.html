@@ -11,6 +11,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/usm/popper.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
          <style>
              .icons{
              background-color: #141B41;
@@ -63,14 +65,17 @@
             font-weight: normal;
             font-size: 19px;
          }
+         .hr-style{
+            height:0.5px;border-width:0;background-color:rgb(187, 182, 182);
+         }
          </style>
     </head>
     <body>
         <div class="container">
             <div class="row mt-sm-5 ">
-                <div class="col-sm-12 shadow p-3 mb-5 bg-white rounded">
-                    <div class="row">
-                        <div class="col ml-sm-5">
+                <div class="col-sm-12 shadow p-3 mb-5 bg-white rounded ">
+                    <div class="row slider">
+                        <div class="col text-center">
                             <a class="links-icons" href="#">
                                 <button class="icons">
                                     <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
@@ -78,7 +83,7 @@
                                 <div class="icons-text">My details</div>
                             </a> 
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <a class="links-icons" href="#">
                                 <button class="icons">
                                     <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="fingerprint" class="svg-inline--fa fa-fingerprint fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256.12 245.96c-13.25 0-24 10.74-24 24 1.14 72.25-8.14 141.9-27.7 211.55-2.73 9.72 2.15 30.49 23.12 30.49 10.48 0 20.11-6.92 23.09-17.52 13.53-47.91 31.04-125.41 29.48-224.52.01-13.25-10.73-24-23.99-24zm-.86-81.73C194 164.16 151.25 211.3 152.1 265.32c.75 47.94-3.75 95.91-13.37 142.55-2.69 12.98 5.67 25.69 18.64 28.36 13.05 2.67 25.67-5.66 28.36-18.64 10.34-50.09 15.17-101.58 14.37-153.02-.41-25.95 19.92-52.49 54.45-52.34 31.31.47 57.15 25.34 57.62 55.47.77 48.05-2.81 96.33-10.61 143.55-2.17 13.06 6.69 25.42 19.76 27.58 19.97 3.33 26.81-15.1 27.58-19.77 8.28-50.03 12.06-101.21 11.27-152.11-.88-55.8-47.94-101.88-104.91-102.72zm-110.69-19.78c-10.3-8.34-25.37-6.8-33.76 3.48-25.62 31.5-39.39 71.28-38.75 112 .59 37.58-2.47 75.27-9.11 112.05-2.34 13.05 6.31 25.53 19.36 27.89 20.11 3.5 27.07-14.81 27.89-19.36 7.19-39.84 10.5-80.66 9.86-121.33-.47-29.88 9.2-57.88 28-80.97 8.35-10.28 6.79-25.39-3.49-33.76zm109.47-62.33c-15.41-.41-30.87 1.44-45.78 4.97-12.89 3.06-20.87 15.98-17.83 28.89 3.06 12.89 16 20.83 28.89 17.83 11.05-2.61 22.47-3.77 34-3.69 75.43 1.13 137.73 61.5 138.88 134.58.59 37.88-1.28 76.11-5.58 113.63-1.5 13.17 7.95 25.08 21.11 26.58 16.72 1.95 25.51-11.88 26.58-21.11a929.06 929.06 0 0 0 5.89-119.85c-1.56-98.75-85.07-180.33-186.16-181.83zm252.07 121.45c-2.86-12.92-15.51-21.2-28.61-18.27-12.94 2.86-21.12 15.66-18.26 28.61 4.71 21.41 4.91 37.41 4.7 61.6-.11 13.27 10.55 24.09 23.8 24.2h.2c13.17 0 23.89-10.61 24-23.8.18-22.18.4-44.11-5.83-72.34zm-40.12-90.72C417.29 43.46 337.6 1.29 252.81.02 183.02-.82 118.47 24.91 70.46 72.94 24.09 119.37-.9 181.04.14 246.65l-.12 21.47c-.39 13.25 10.03 24.31 23.28 24.69.23.02.48.02.72.02 12.92 0 23.59-10.3 23.97-23.3l.16-23.64c-.83-52.5 19.16-101.86 56.28-139 38.76-38.8 91.34-59.67 147.68-58.86 69.45 1.03 134.73 35.56 174.62 92.39 7.61 10.86 22.56 13.45 33.42 5.86 10.84-7.62 13.46-22.59 5.84-33.43z"></path></svg>
@@ -87,7 +92,7 @@
                             </a> 
      
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <a class="links-icons" href="#">
                                 <button class="icons">
                                     <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="far" data-icon="calendar-check" class="svg-inline--fa fa-calendar-check fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"></path></svg>
@@ -96,7 +101,7 @@
                             </a> 
      
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <a class="links-icons" href="#">
                                 <button class="icons">
                                    <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="briefcase-medical" class="svg-inline--fa fa-briefcase-medical fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 128h-80V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v48H48c-26.5 0-48 21.5-48 48v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V176c0-26.5-21.5-48-48-48zM192 96h128v32H192V96zm160 248c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8v48z"></path></svg>
@@ -105,7 +110,7 @@
                             </a>  
      
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <a class="links-icons" href="#">
                                 <button class="icons">
                                     <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path></svg>
@@ -113,7 +118,7 @@
                                 <div class="icons-text">Notifications</div>
                             </a> 
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <a class="links-icons" href="#">
                                 <button class="icons">
                                     <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="money-check" class="svg-inline--fa fa-money-check fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M0 448c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V128H0v320zm448-208c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v32c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-32zm0 120c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H456c-4.42 0-8-3.58-8-8v-16zM64 264c0-4.42 3.58-8 8-8h304c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm0 96c0-4.42 3.58-8 8-8h176c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zM624 32H16C7.16 32 0 39.16 0 48v48h640V48c0-8.84-7.16-16-16-16z"></path></svg>
@@ -121,7 +126,7 @@
                                 <div class="icons-text">Payment</div>
                             </a> 
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <a class="links-icons" href="#">
                                 <button class="icons">
                                     <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="user-check" class="svg-inline--fa fa-user-check fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zm323-128.4l-27.8-28.1c-4.6-4.7-12.1-4.7-16.8-.1l-104.8 104-45.5-45.8c-4.6-4.7-12.1-4.7-16.8-.1l-28.1 27.9c-4.7 4.6-4.7 12.1-.1 16.8l81.7 82.3c4.6 4.7 12.1 4.7 16.8.1l141.3-140.2c4.6-4.7 4.7-12.2.1-16.8z"></path></svg>
@@ -129,7 +134,7 @@
                                 <div class="icons-text ">Membership</div>
                             </a> 
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <a class="links-icons" href="#">
                                 <button class="icons">
                                     <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="user-friends" class="svg-inline--fa fa-user-friends fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"></path></svg>
@@ -141,10 +146,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 d">
+                <div class="col-sm-12 mt-3 mt-lg-0 d">
                     My details
                 </div>
-                <div class="col-sm-3 shadow p-3 mb-5 bg-white rounded mt-sm-3 p-sm-5  ">
+                <div class="col-sm-3 shadow-sm p-3 mb-5 bg-white rounded-sm mt-sm-3 p-sm-5 d-none d-sm-none d-md-none d-lg-block">
                     <div class="border bordr rounded "></div>
                     <div>
                         <a href="#" class="l">
@@ -152,86 +157,116 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-8 offset-sm-1">
+                
+                <div class="col-lg-8 col-6 offset-lg-1 mr-auto">
                     <div class="row">
-                        <div class="col-sm-3 boldtext">Name</div>
-                        <div class="col-sm-4">Agnideep Sengupta</div>
-                        <div class="col-sm-3 offset-sm-1 boldtext">Biolege membership</div>
-                        <div class="col-sm-1">Yes</div>
-                        <div class="col-sm-3 mt-sm-3 boldtext">Gender</div>
-                        <div class="col-sm-4 mt-sm-3">Male</div>
-                        <div class="col-sm-3 mt-sm-3 offset-sm-1 boldtext ">Member Modal</div>
-                        <div class="col-sm-1 mt-sm-3">family</div>
-                        <div class="col-sm-3 mt-sm-3 boldtext">Date of Birth</div>
-                        <div class="col-sm-4 mt-sm-3">September 04, 1998</div>
+                        <div class="col-lg-3 boldtext  mt-4 mt-lg-0 ">Name</div>
+                        <div class="col-lg-4">Agnideep Sengupta</div>
+                        <div class="col-lg-3 offset-lg-1 boldtext d-none d-sm-none d-md-none d-lg-block">Biolege membership</div>
+                        <div class="col-lg-1 d-none d-sm-none d-md-none d-lg-block">Yes</div>
+                        <div class="col-lg-3 mt-3 boldtext">Gender</div>
+                        <div class="col-lg-4 mt-lg-3">Male</div>
+                        <div class="col-lg-3 mt-sm-3 offset-lg-1 boldtext d-none d-sm-none d-md-none d-lg-block">Member Modal</div>
+                        <div class="col-lg-1 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">family</div>
+                        <div class="col-lg-3 mt-3 boldtext">Date of Birth</div>
+                        <div class="col-lg-4 mt-lg-3">September 04, 1998</div>
                         <div class="w-100"></div>
-                        <div class="col-sm-3 mt-sm-3 boldtext">Age</div>
-                        <div class="col-sm-4 mt-sm-3">21</div>
+                        <div class="col-lg-3 mt-3 boldtext">Age</div>
+                        <div class="col-lg-4 mt-lg-3">21</div>
                         <div class="w-100"></div>
-                        <div class="col-sm-3 mt-sm-3 boldtext">Contact</div>
-                        <div class="col-sm-4 mt-sm-3">8876977257 <a class="sidetext"href=# >Edit</a></div>
+                        <div class="col-lg-3 mt-3 boldtext">Contact</div>
+                        <div class="col-lg-4 mt-lg-3">8876977257 <a class="sidetext"href=# >Edit</a></div>
                         <div class="w-100"></div>
-                        <div class="col-sm-3 mt-sm-3 boldtext">E-mail<a class="text-muted sidetext"> (optional)</a></div>
-                        <div class="col-sm-4 mt-sm-3">agnideepsg02@gmail.com</div>
+                        <div class="col-lg-3 mt-3 boldtext">E-mail<a class="text-muted sidetext"> (optional)</a></div>
+                        <div class="col-lg-4 mt-lg-3">agnideepsg02@gmail.com</div>
                         <div class="w-100"></div>
-                        <div class="col-sm-3 mt-sm-3  boldtext">Blood Group</div>
-                        <div class="col-sm-4 mt-sm-3">A+</div>
+                        <div class="col-lg-3 mt-3  boldtext">Blood Group</div>
+                        <div class="col-lg-4 mt-lg-3">A+</div>
+                        <div class="col-lg-3 mt-3 offset-lg-1 boldtext d-lg-none d-xl-none ">Biolege membership</div>
+                        <div class="col-lg-1 d-lg-none d-xl-none ">Yes</div>
+                        <div class="col-lg-3 mt-3 offset-lg-1 d-lg-none d-xl-none boldtext">Member Modal</div>
+                        <div class="col-lg-1 mt-sm-3 d-lg-none d-xl-none ">family</div>
+                    </div>
+                </div>
+                <div class="col-6 d-lg-none d-xl-none ml-auto mt-4">
+                    <div class="border bordr rounded "></div>
+                    <div>
+                        <a href="#" class="l">
+                            Edit
+                        </a>
                     </div>
                 </div>
                 <div class="col-sm-12 text-right">
                     <button type="button" class="btn btn-sm px-sm-5">Save</button>
-                    <hr style="height:0.5px;border-width:0;background-color:rgb(187, 182, 182)">
+                    <hr class="hr-style">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 d">
                     Other details
                 </div>
-                <div class="col-sm-11 offset-sm-1">
+                <div class="col-lg-11 offset-lg-1">
                     <div class="row">
-                        <div class="col-sm-1 boldtext mt-sm-3">Height</div>
-                        <div class="col-sm-2 mt-sm-3 ">5.8 feet</div>
-                        <div class="col-sm-2 mt-sm-3 offset-sm-1 boldtext">Pressure</div>
-                        <div class="col-sm-1 mt-sm-3">120/80</div>
-                        <div class="col-sm-2 mt-sm-3 offset-sm-1 boldtext">Last consulted</div>
-                        <div class="col-sm-2 mt-sm-3">Dr Ridhi Dhar</div>
-                        <div class="col-sm-1 boldtext mt-sm-3">Weight</div>
-                        <div class="col-sm-2 mt-sm-3 ">58 Kgs</div>
-                        <div class="col-sm-2 mt-sm-3 offset-sm-1 boldtext">Heart Rate</div>
-                        <div class="col-sm-1 mt-sm-3">72 bpm</div>
-                        <div class="col-sm-2 mt-sm-3 offset-sm-1 boldtext">Date</div>
-                        <div class="col-sm-2 mt-sm-3">March 24, 2020</div>
-                        <div class="col-sm-1 boldtext mt-sm-3">BMI</div>
-                        <div class="col-sm-2 mt-sm-3 ">19.4(normal weight)</div>
-                        <div class="col-sm-2 mt-sm-3 offset-sm-1 boldtext">Oxygen Level</div>
-                        <div class="col-sm-2 mt-sm-3 ">96mm Hg</div>  
+                        <div class="col-lg-1 boldtext mt-3">Height</div>
+                        <div class="col-lg-2 mt-lg-3 ">5.8 feet</div>
+                        <div class="col-lg-1 boldtext mt-sm-3 d-lg-none d-xl-none mt-3">Weight</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none">58 Kgs</div>
+                        <div class="col-lg-1 boldtext mt-sm-3 d-lg-none d-xl-none mt-3">BMI</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none">19.4(normal weight)</div>
+                        <div class="col-lg-1 boldtext mt-sm-3 d-lg-none d-xl-none mt-3">Allergies</div>
+                        <div class="col-lg-4 d-lg-none d-xl-none">Milk</div>
+                        <div class="col-lg-1 boldtext mt-sm-3 d-lg-none d-xl-none mt-3">Diseases</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none">Thyroid</div>
+                        <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext mt-3 ">Pressure</div>
+                        <div class="col-lg-1 mt-lg-3">120/80</div>
+                        <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-lg-none d-xl-none mt-3">Heart Rate</div>
+                        <div class="col-lg-1 d-lg-none d-xl-none">72 bpm</div>
+                        <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-lg-none d-xl-none mt-3">Oxygen Level</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none">96mm Hg</div>  
+                        <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext mt-3 ">Last consulted</div>
+                        <div class="col-lg-2 mt-lg-3">Dr Ridhi Dhar</div>
+                        <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-lg-none d-xl-none mt-3">Date</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none">March 24, 2020</div>
+                        <div class="col-lg-1 boldtext mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Weight</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">58 Kgs</div>
+                        <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-none d-sm-none d-md-none d-lg-block">Heart Rate</div>
+                        <div class="col-lg-1 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">72 bpm</div>
+                        <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-none d-sm-none d-md-none d-lg-block">Date</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">March 24, 2020</div>
+                        <div class="col-lg-1 boldtext mt-sm-3 d-none d-sm-none d-md-none d-lg-block">BMI</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">19.4(normal weight)</div>
+                        <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext  d-none d-sm-none d-md-none d-lg-block">Oxygen Level</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">96mm Hg</div>  
+                        <div class="w-100 d-none d-sm-none d-md-none d-lg-block"></div>
+                        <div class="col-lg-1 boldtext mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Allergies</div>
+                        <div class="col-lg-4 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Milk</div>
                         <div class="w-100"></div>
-                        <div class="col-sm-1 boldtext mt-sm-3">Allergies</div>
-                        <div class="col-sm-4 mt-sm-3 ">Milk</div>
-                        <div class="w-100"></div>
-                        <div class="col-sm-1 boldtext mt-sm-3">Diseases</div>
-                        <div class="col-sm-2 mt-sm-3 ">Thyroid</div>
+                        <div class="col-lg-1 boldtext mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Diseases</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Thyroid</div>
                     </div>
                 </div>
                 <div class="col-sm-12 text-right">
                     <button type="button" class="btn btn-sm px-sm-5">Save</button>
-                    <hr style="height:0.5px;border-width:0;background-color:rgb(187, 182, 182)">
+                    <hr class="hr-style">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 d">
                 Address
                 </div>
-                <div class="col-sm-6 mt-sm-3">
+                <div class="col-lg-6 mt-3">
                     <div class="row">
                         <div class="col-sm-12 t">
                             Diagnostics
                         </div>
-                        <div class="col-sm-12 text-muted">
+                        <div class="col-lg-12 col-7 text-muted">
                             Simple collection address
                         </div>
-                        <div class="col-sm-7 mt-sm-2">
-                            <div class="card" style="width: 18rem;">
+                        <div class="col-5 text-right d-md-none d-lg-none d-xl-none">
+                            +Add Address
+                        </div>
+                        <div class="col-md-7 col-12 mt-sm-2">
+                            <div class="card">
                                 <div class="card-body">
                                   <div class="card-text">
                                       <div class="row">
@@ -257,16 +292,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 mt-sm-3">
+                <div class="col-lg-6 mt-3">
                     <div class="row">
                         <div class="col-sm-12 t">
                             Medicine
                         </div>
-                        <div class="col-sm-12 text-muted">
+                        <div class="col-lg-12 col-6 text-muted">
                             Shipping Address
                         </div>
-                        <div class="col-sm-7 mt-sm-2">
-                            <div class="card" style="width: 18rem;">
+                        <div class="col-6 text-right d-md-none d-lg-none d-xl-none">
+                            +Add Address
+                        </div>
+                        <div class="col-md-7 mt-sm-2">
+                            <div class="card">
                                 <div class="card-body">
                                   <div class="card-text">
                                       <div class="row">
@@ -293,7 +331,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12">
-                    <hr style="height:0.5px;border-width:0;background-color:rgb(187, 182, 182)">
+                    <hr class="hr-style">
                 </div>
             </div>
             <div class="row">
@@ -302,5 +340,42 @@
                 </div>
             </div>
         </div>
+        <script src="js/native.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+    <script>
+      $('.slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 8,
+      slidesToScroll: 8,
+      responsive: [
+         {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true
+            }
+         },
+         {
+            breakpoint: 600,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+            }
+         },
+         {
+            breakpoint: 480,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+            }
+         }
+      ]
+      });
+    </script>
     </body>
+    
 </html>
