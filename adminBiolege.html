@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+     <style>
+          .bod{
+                background-color: #141B41;
+            }
+            .dash-bg{
+                background-color: #FF8900;
+                color: white;
+            }
+            .nav>a {
+                background-color: #141B41 ;
+                color: #fff;
+                font-weight: 600;
+            }
+            .nav>li>a{
+            color: black;
+            font-size: 20px;
+          }
+        .small-text{
+            font-size: 12px;
+        }
+        .input-fees{
+            border-width: 2px ;
+            border-color: #0076FF;
+        }
+        .week{
+        background: #FFFFFF;
+        border: 1.5px solid #0076FF;
+        border-radius: 5px;
+        font-weight: 500;
+        color: #0076FF;
+        margin-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .timing-week{
+          border-width: 2px;
+      }
+      .plus-button{
+          color: black;
+          text-decoration: none;
+      }
+      .save{
+          background-color: #FF8900;
+          color: white;
+      }
+      .icon{
+        color: rgb(108, 167, 20);
+         padding-top: -30px;  
+        margin-top: -40px;
+      }
+      .week-button{
+        margin-top: -15px;
+        margin-left: 2px;
+      }
+      .inf{
+        background-color: white;
+      }
+      @media only screen and (max-width: 600px) {
+        .nav>li>a{
+                  font-size: 10px;
+                }
+        .nav>a{
+            font-size: 7px;
+        }
+                
+      }
+      @media only screen and (min-width: 600px){
+        .nav>a{
+            font-size: 12px;
+        }
+      }
+      @media only screen and (min-width: 992px){
+        .nav>a{
+            font-size: 18px;
+        }
+      }
+
+     </style>
+</head>
+<body class="bod">
+    <div class="container mt-lg-5">
+     
+            <div class="row">
+                <div class="col-12 col-lg-2 mt-md-5 py-md-4 left-pane rounded dash-bg inf1" ><l>
+                     Dashboard<br></l>
+                   <l> Customer </l>
+                </div>
+                <div class="col-lg-10 ">
+                    <div class="col-md-12">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">HOME</a>
+                                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">DIAGNOSTICS</a>
+                                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="true">Dr. APPOINTMENT</a>
+                                  <a class="nav-item nav-link" id="nav-pharma-tab" data-toggle="tab" href="#nav-pharma" role="tab" aria-controls="nav-pharma" aria-selected="false">PHARMACEUTICALS</a>
+                                </div>
+                              </nav>
+                              <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active inf" id="" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <div class="row mx-sm-4 mx-2">
+                                        <div class="col-sm-12 mt-4">
+                                            <h3>Profile</h3>
+                                        </div>
+                                        <div class="col-sm-12 mt-4">
+                                         <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                             <li class="nav-item " role="presentation">
+                                               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My details</a>
+                                             </li>
+                                             <li class="nav-item" role="presentation">
+                                               <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My clinic</a>
+                                             </li>
+                                           </ul>
+                                           <div class="tab-content" id="myTabContent">
+                                             <div class="tab-pane fade show active border border-top-0" id="" role="tabpanel" aria-labelledby="profile-tab">
+                                                 <div class="row ml-md-5 ml-2 mr-4">
+                                                     <div class="col-sm-12 mt-5">
+                                                         <h4>Dona Medicos Clinic</h4> 
+                                                     </div>
+                                                     <div class="col-sm-12 mt-4 text-muted small-text">
+                                                         Sector 9, Bara khamba road, Park avenue
+                                                     </div>
+                                                     <div class="col-sm-12 text-muted small-text">
+                                                         near panwel, Dadar,Assam 
+                                                     </div>
+                                                     <div class="col-lg-2 col-5 mt-5">
+                                                         <h5>My fees</h5>
+                                                     </div>
+                                                     <div class="col-lg-3 col-7 mt-5">
+                                                         <div class="input-group input-group-md mb-3">
+                                                             <div class="input-group-prepend">
+                                                                 <h5>Rs</h5>
+                                                             </div>
+                                                             <input type="text" class="form-control ml-2 rounded input-fees" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                           </div>
+                                                     </div>
+                                                     <div class="w-100"></div>
+                                                     <div class="col-sm-12 mt-3">
+                                                         <h5>Days</h5>
+                                                     </div>
+                                                     <div class="col-sm-11 mt-3">
+                                                         <table class="table-responsive">
+                                                         <tr>
+                                                           <td>
+                                                             <div class="week-button"><a href="#"><button class="btn btn-sm week">
+                                                               Monday
+                                                             </button></a></div>
+                                                             <div class="icon"><svg aria-hidden="true" focusable="false" width="1em" height="1em" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg></div>
+                                                           </td>
+                                                           <td>
+                                                             <div class="week-button"><a href="#"><button class="btn btn-sm week">
+                                                               Tuesday
+                                                             </button></a></div>
+                                                             <div class="icon"><svg aria-hidden="true" focusable="false" width="1em" height="1em" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg></div>
+                                                           </td>
+                                                           <td>
+                                                             <a href="#"><button class="btn btn-sm week wednesday">
+                                                               Wednesday
+                                                             </button></a>
+                                                           </td>
+                                                           <td>
+                                                             <a href="#"><button class="btn btn-sm week">
+                                                               Thursday
+                                                             </button></a>
+                                                           </td>
+                                                           <td>
+                                                             <div class="week-button"><a href="#"><button class="btn btn-sm week">
+                                                               &nbsp;Friday&nbsp;
+                                                             </button></a></div>
+                                                             <div class="icon"><svg aria-hidden="true" focusable="false" width="1em" height="1em" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg></div>
+                                                           </td>
+                                                           <td>
+                                                             <a href="#"><button class="btn btn-sm week">
+                                                               Saturday
+                                                             </button></a>
+                                                           </td>
+                                                           <td>
+                                                             <a href="#"><button class="btn btn-sm week friday">
+                                                               Sunday
+                                                             </button></a>
+                                                           </td>
+                                                         </tr>
+                                                       </table>
+                                                     </div>
+                                                     <div class="col-sm-12 mt-5">
+                                                         <h5>Timings</h5>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 mt-5 ml-md-4">
+                                                         <h5>Monday</h5>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 mt-5 ml-4 ml-md-0">
+                                                         <input type="text" class="form-control rounded timing-week" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                     </div>
+                                                     <div class="col-lg-1 col-1 mt-5 text-center mx-lg-n4  ml-n2 ml-md-0">
+                                                         <h2>-</h2>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 mt-5">
+                                                         <input type="text" class="form-control rounded timing-week" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                     </div>
+                                                     <div class="col-lg-1 col-1 mt-5 text-center mx-n3">
+                                                         <button type="button" class="btn  btn-light plus-button p-1 "><h4>+</h4></button>
+                                                     </div>
+                                                     <div class="w-100"></div>
+                                                     <div class="col-lg-2 col-3 mt-5 ml-md-4">
+                                                         <h5>Tuesday</h5>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 mt-5  ml-4 ml-md-0">
+                                                         <input type="text" class="form-control rounded timing-week" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                     </div>
+                                                     <div class="col-lg-1 col-1 mt-5 text-center mx-lg-n4 ml-n2 ml-md-0 ">
+                                                         <h2>-</h2>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 mt-5">
+                                                         <input type="text" class="form-control rounded timing-week" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                     </div>
+                                                     <div class="col-lg-1 col-1 mt-5 text-center mx-n3">
+                                                         <button type="button" class="btn  btn-light plus-button p-1 "><h4>+</h4></button>
+                                                     </div>
+                                                     <div class="w-100"></div>
+                                                     <div class="col-lg-2 col-3 mt-5 ml-md-4">
+                                                         <h5>Friday</h5>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 mt-5  ml-4 ml-md-0">
+                                                         <input type="text" class="form-control rounded timing-week" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                     </div>
+                                                     <div class="col-lg-1 col-1 mt-5 text-center mx-lg-n4  ml-n2 ml-md-0 ">
+                                                         <h2>-</h2>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 mt-5">
+                                                         <input type="text" class="form-control rounded timing-week" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                     </div>
+                                                     <div class="col-lg-1 col-1 mt-5 text-center mx-n3">
+                                                         <button type="button" class="btn  btn-light plus-button p-1 "><h4>+</h4></button>
+                                                     </div>
+                                                     <div class="w-100"></div>
+                                                     <div class="col-sm-12 mt-5">
+                                                         <h5>Others</h5>
+                                                     </div>
+                                                     <div class="col-lg-6 col-8 mt-4">
+                                                         <h5>Average time for a patient</h5>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 mt-4">
+                                                             <input type="text" class="form-control rounded timing-week" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                     </div>
+                                                     <div class="col-lg-1 col-1 mt-4 ml-n3 ml-md-0">
+                                                         <h5>Mins</h5>
+                                                     </div>
+                                                     <div class="w-100"></div>
+                                                     <div class="col-lg-6 col-8 mt-4">
+                                                         <h5>Average patient per day</h5>
+                                                     </div>
+                                                     <div class="col-lg-2 col-3 my-4">
+                                                         <input type="text" class="form-control rounded timing-week" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
