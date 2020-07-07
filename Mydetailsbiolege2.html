@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -21,8 +22,15 @@
              border: none;
              padding: 10px;
          }
+         .icons1{
+            background-color: #FF8900;
+             color: #FFF;
+             border-radius: 50%;
+             border: none;
+             padding: 10px;
+         }
          .icons-text{
-             font-size: 12px;
+             font-size: 14px;
              color: #141B41;
             margin-top: 5px;
              
@@ -42,12 +50,17 @@
              width: 9em;
              background-color: rgb(155, 153, 153);
              margin-left: 20px ;
+             border-radius: 20px;
          }
          .l{
              padding-left: 70px;
          }
+         .lighttext{
+             font-size: 15px;
+         }
          .boldtext{
             font-weight: 600;
+            font-size: 17px;
          }
          .sidetext{
              font-size: 11px;
@@ -68,16 +81,31 @@
          .hr-style{
             height:0.5px;border-width:0;background-color:rgb(187, 182, 182);
          }
+         .shad{
+            box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+         }
+         .shad1{
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+         }
+         .bordrup{
+             border-radius: 10px;
+         }
+         .text-style{
+            font-family: 'Nunito Sans';
+         }
+         .button-text{
+             font-weight: 600;
+         }
          </style>
     </head>
-    <body>
+    <body class="text-style">
         <div class="container">
             <div class="row mt-sm-5 ">
-                <div class="col-sm-12 shadow p-3 mb-5 bg-white rounded ">
+                <div class="col-sm-12 shad p-3 mb-5 bg-white bordrup">
                     <div class="row slider">
                         <div class="col text-center">
                             <a class="links-icons" href="#">
-                                <button class="icons">
+                                <button class="icons1">
                                     <svg aria-hidden="true" focusable="false" width=25px height=25px data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
                                 </button>
                                 <div class="icons-text">My details</div>
@@ -149,8 +177,8 @@
                 <div class="col-sm-12 mt-3 mt-lg-0 d">
                     My details
                 </div>
-                <div class="col-sm-3 shadow-sm p-3 mb-5 bg-white rounded-sm mt-sm-3 p-sm-5 d-none d-sm-none d-md-none d-lg-block">
-                    <div class="border bordr rounded "></div>
+                <div class="col-sm-3 shad1 p-3 mb-5 bg-white rounded-sm mt-sm-3 p-sm-5 d-none d-sm-none d-md-none d-lg-block">
+                    <div class="border bordr "></div>
                     <div>
                         <a href="#" class="l">
                             Edit
@@ -161,31 +189,31 @@
                 <div class="col-lg-8 col-6 offset-lg-1 mr-auto">
                     <div class="row">
                         <div class="col-lg-3 boldtext  mt-4 mt-lg-0 ">Name</div>
-                        <div class="col-lg-4">Agnideep Sengupta</div>
+                        <div class="col-lg-4 lighttext">Agnideep Sengupta</div>
                         <div class="col-lg-3 offset-lg-1 boldtext d-none d-sm-none d-md-none d-lg-block">Biolege membership</div>
-                        <div class="col-lg-1 d-none d-sm-none d-md-none d-lg-block">Yes</div>
+                        <div class="col-lg-1 d-none d-sm-none d-md-none d-lg-block lighttext">Yes</div>
                         <div class="col-lg-3 mt-3 boldtext">Gender</div>
-                        <div class="col-lg-4 mt-lg-3">Male</div>
+                        <div class="col-lg-4 mt-lg-3 lighttext">Male</div>
                         <div class="col-lg-3 mt-sm-3 offset-lg-1 boldtext d-none d-sm-none d-md-none d-lg-block">Member Modal</div>
-                        <div class="col-lg-1 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">family</div>
+                        <div class="col-lg-1 mt-sm-3 d-none d-sm-none d-md-none d-lg-block lighttext">family</div>
                         <div class="col-lg-3 mt-3 boldtext">Date of Birth</div>
-                        <div class="col-lg-4 mt-lg-3">September 04, 1998</div>
+                        <div class="col-lg-4 mt-lg-3 lighttext">September 04, 1998</div>
                         <div class="w-100"></div>
                         <div class="col-lg-3 mt-3 boldtext">Age</div>
-                        <div class="col-lg-4 mt-lg-3">21</div>
+                        <div class="col-lg-4 mt-lg-3 lighttext">21</div>
                         <div class="w-100"></div>
                         <div class="col-lg-3 mt-3 boldtext">Contact</div>
-                        <div class="col-lg-4 mt-lg-3">8876977257 <a class="sidetext"href=# >Edit</a></div>
+                        <div class="col-lg-4 mt-lg-3 lighttext">8876977257 <a class="sidetext"href=# >Edit</a></div>
                         <div class="w-100"></div>
                         <div class="col-lg-3 mt-3 boldtext">E-mail<a class="text-muted sidetext"> (optional)</a></div>
-                        <div class="col-lg-4 mt-lg-3">agnideepsg02@gmail.com</div>
+                        <div class="col-lg-4 mt-lg-3 lighttext">agnideepsg02@gmail.com</div>
                         <div class="w-100"></div>
                         <div class="col-lg-3 mt-3  boldtext">Blood Group</div>
-                        <div class="col-lg-4 mt-lg-3">A+</div>
+                        <div class="col-lg-4 mt-lg-3 lighttext">A+</div>
                         <div class="col-lg-3 mt-3 offset-lg-1 boldtext d-lg-none d-xl-none ">Biolege membership</div>
-                        <div class="col-lg-1 d-lg-none d-xl-none ">Yes</div>
+                        <div class="col-lg-1 d-lg-none d-xl-none lighttext">Yes</div>
                         <div class="col-lg-3 mt-3 offset-lg-1 d-lg-none d-xl-none boldtext">Member Modal</div>
-                        <div class="col-lg-1 mt-sm-3 d-lg-none d-xl-none ">family</div>
+                        <div class="col-lg-1 mt-sm-3 d-lg-none d-xl-none lighttext">family</div>
                     </div>
                 </div>
                 <div class="col-6 d-lg-none d-xl-none ml-auto mt-4">
@@ -197,7 +225,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 text-right">
-                    <button type="button" class="btn btn-sm px-sm-5">Save</button>
+                    <button type="button " class="btn btn-sm px-sm-5 button-text">Save</button>
                     <hr class="hr-style">
                 </div>
             </div>
@@ -208,45 +236,45 @@
                 <div class="col-lg-11 offset-lg-1">
                     <div class="row">
                         <div class="col-lg-1 boldtext mt-3">Height</div>
-                        <div class="col-lg-2 mt-lg-3 ">5.8 feet</div>
+                        <div class="col-lg-2 mt-lg-3 lighttext">5.8 feet</div>
                         <div class="col-lg-1 boldtext mt-sm-3 d-lg-none d-xl-none mt-3">Weight</div>
-                        <div class="col-lg-2 d-lg-none d-xl-none">58 Kgs</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none lighttext">58 Kgs</div>
                         <div class="col-lg-1 boldtext mt-sm-3 d-lg-none d-xl-none mt-3">BMI</div>
-                        <div class="col-lg-2 d-lg-none d-xl-none">19.4(normal weight)</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none lighttext">19.4(normal weight)</div>
                         <div class="col-lg-1 boldtext mt-sm-3 d-lg-none d-xl-none mt-3">Allergies</div>
-                        <div class="col-lg-4 d-lg-none d-xl-none">Milk</div>
+                        <div class="col-lg-4 d-lg-none d-xl-none lighttext">Milk</div>
                         <div class="col-lg-1 boldtext mt-sm-3 d-lg-none d-xl-none mt-3">Diseases</div>
-                        <div class="col-lg-2 d-lg-none d-xl-none">Thyroid</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none lighttext">Thyroid</div>
                         <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext mt-3 ">Pressure</div>
-                        <div class="col-lg-1 mt-lg-3">120/80</div>
+                        <div class="col-lg-1 mt-lg-3 lighttext">120/80</div>
                         <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-lg-none d-xl-none mt-3">Heart Rate</div>
-                        <div class="col-lg-1 d-lg-none d-xl-none">72 bpm</div>
+                        <div class="col-lg-1 d-lg-none d-xl-none lighttext">72 bpm</div>
                         <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-lg-none d-xl-none mt-3">Oxygen Level</div>
-                        <div class="col-lg-2 d-lg-none d-xl-none">96mm Hg</div>  
+                        <div class="col-lg-2 d-lg-none d-xl-none lighttext">96mm Hg</div>  
                         <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext mt-3 ">Last consulted</div>
-                        <div class="col-lg-2 mt-lg-3">Dr Ridhi Dhar</div>
+                        <div class="col-lg-2 mt-lg-3 lighttext">Dr Ridhi Dhar</div>
                         <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-lg-none d-xl-none mt-3">Date</div>
-                        <div class="col-lg-2 d-lg-none d-xl-none">March 24, 2020</div>
+                        <div class="col-lg-2 d-lg-none d-xl-none lighttext">March 24, 2020</div>
                         <div class="col-lg-1 boldtext mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Weight</div>
-                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">58 Kgs</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block lighttext">58 Kgs</div>
                         <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-none d-sm-none d-md-none d-lg-block">Heart Rate</div>
-                        <div class="col-lg-1 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">72 bpm</div>
+                        <div class="col-lg-1 mt-sm-3 d-none d-sm-none d-md-none d-lg-block lighttext">72 bpm</div>
                         <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext d-none d-sm-none d-md-none d-lg-block">Date</div>
-                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">March 24, 2020</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block lighttext">March 24, 2020</div>
                         <div class="col-lg-1 boldtext mt-sm-3 d-none d-sm-none d-md-none d-lg-block">BMI</div>
-                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">19.4(normal weight)</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block lighttext">19.4(normal weight)</div>
                         <div class="col-lg-2 mt-sm-3 offset-lg-1 boldtext  d-none d-sm-none d-md-none d-lg-block">Oxygen Level</div>
-                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">96mm Hg</div>  
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block lighttext">96mm Hg</div>  
                         <div class="w-100 d-none d-sm-none d-md-none d-lg-block"></div>
                         <div class="col-lg-1 boldtext mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Allergies</div>
-                        <div class="col-lg-4 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Milk</div>
+                        <div class="col-lg-4 mt-sm-3 d-none d-sm-none d-md-none d-lg-block lighttext">Milk</div>
                         <div class="w-100"></div>
                         <div class="col-lg-1 boldtext mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Diseases</div>
-                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block">Thyroid</div>
+                        <div class="col-lg-2 mt-sm-3 d-none d-sm-none d-md-none d-lg-block lighttext">Thyroid</div>
                     </div>
                 </div>
                 <div class="col-sm-12 text-right">
-                    <button type="button" class="btn btn-sm px-sm-5">Save</button>
+                    <button type="button" class="btn btn-sm px-sm-5 button-text">Save</button>
                     <hr class="hr-style">
                 </div>
             </div>
@@ -331,11 +359,11 @@
                     </div>
                 </div>
                 <div class="col-sm-12">
-                    <hr class="hr-style">
+                    <hr class="hr-style d-none">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 d">
+            <div class="row d-none">
+                <div class="col-sm-12 d ">
                     Feedback and Reviews
                 </div>
             </div>
