@@ -1,0 +1,32 @@
+.icons{
+    background-color: #141B41;
+    color: #FFF;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+}
+.icons1{
+   background-color: #FF8900;
+    color: #FFF;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+}
+.icons-text{
+    font-size: 14px;
+    color: #141B41;
+   margin-top: 5px;
+    
+}
+.shad{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+}
+ .bordrup{
+     border-radius: 10px;
+ }
+ .graycircle{
+     border-radius: 50px;
+     height: 3em;
+     width: 3em;
+     background-color: gray;
+ }
