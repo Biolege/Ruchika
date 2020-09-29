@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.cardborder{
+    border-radius: 10px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+    border: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.bluebackground{
+    background-color: #141B41;
+    color: white;
+    border-top-left-radius: 10px;
+    
+}
+.bluebackground2{
+    background-color: #141B41;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.marginbottom{
+    margin-bottom: 38px;
+}
+.bluebackground1{
+    background-color: #141B41;
+    color: white;
+    border-top-right-radius: 10px;
+    
+}
+.font14{
+    font-size: 16px;
+}
+.font16{
+    font-size: 17px;
+    font-weight: 600;
+}
+.font20{
+    font-size: 18px;
+    font-weight: 600;
+}
+.font{
+    font-style: 'Nunito', sans-serif;
+}
+.font22{
+    font-size: 22px;
+    font-weight: 600;
+}
+.font18{
+    font-size: 18px;
+}
+.square{
+    height: 84px;
+    width: 84px;
+    background-color: gray;
+}
