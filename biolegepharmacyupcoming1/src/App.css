@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.onlineorders{
+   font-size: 36px;
+}
+.font{
+    font-family: 'Nunito', sans-serif;
+}
+.cardborder{
+    border-radius: 10px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+    border: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+.font15{
+    font-size: 15px;
+}
+.font21{
+    font-size: 22px;
+    color: white;
+}
+.buttonback{
+    background-color: #FF8900;
+    color: white;
+}
+.font36{
+    font-size: 30px;
+    
+}
+.bluebackground{
+    background-color: #141B41;
+    color: white;
+    
+}
+.font{
+    font-style: 'Nunito', sans-serif;
+}
+.bluecircle{
+  background-color: #141B41;
+  border-radius: 50%;
+  border: none;
+  padding: 25px;
+}
+.icons{
+    background-color: #141B41;
+    color: #FFF;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+}
+.iconstext{
+    font-size: 14px;
+    color: #141B41;
+   margin-top: 5px;
+    
+}
+.activeicons{
+    background-color: #FF8900;
+    color: #FFF;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+}
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+#sidebar.active {
+    margin-left: -100px;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    #sidebar {
+        margin-left: -100px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: white;
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+    border: 0px;
+    border-radius: 10px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background:white;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: white;
+    background: #fff;
+}
+.vl{
+    border-left: 1px solid black;
+    height: 58px;
+  }
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: white;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: white;
+}
+.px16{
+    font-size: 14px;
+}
+.px12{
+    font-size: 12px;
+}

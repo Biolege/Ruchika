@@ -101,19 +101,28 @@ function App() {
       <div className="col-12 onlineorders mb-5">
         Online Orders
       </div>
-      <div className="col-lg-8 col-12">
+      <div className="col-xl-8 col-12">
         <AccComp></AccComp>
       </div>
-      <div className="col-lg-4 mt-5 mt-lg-0">
-      
+      <div className="col-xl-4 mt-5 mt-lg-0">
+        <div className="row">
+          <div className="col-12 d-none d-xl-block">
+              <div className="btn btn-sm buttonback btn-block">
+                <h4>Ready to Deliver</h4> 
+              </div>
+          </div>
+          <div className="col-12 mt-2">
+            <Bill></Bill>
+          </div>
+        </div>
       </div>
-      <div className="col-lg-8 col-12 mt-5">
+      <div className=" col-12 mt-5">
         <Orders></Orders> 
       </div>
-      <div className="col-lg-4 mt-5">
-        <div className="btn btn-sm buttonback btn-block">
-          <h4>Check Items</h4> 
-        </div>
+      <div className="col-12 d-xl-none mt-4">
+      <div className="btn btn-sm buttonback btn-block">
+                <h4>Ready to Deliver</h4> 
+              </div>
       </div>
     </div>
   </div>

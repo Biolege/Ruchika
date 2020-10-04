@@ -19,7 +19,9 @@
     border-top-right-radius: 10px;
     
 }
-
+.marginbottom{
+    margin-bottom: 38px;
+}
 .bluebackground1{
     background-color: #141B41;
     color: white;
@@ -52,3 +54,9 @@
     width: 84px;
     background-color: gray;
 }
+.rect{
+    height: 40em;
+    width: 0.1em;
+    background-color: rgb(172, 166, 166);
+}
+
