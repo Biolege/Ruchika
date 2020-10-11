@@ -580,6 +580,7 @@
             .crd-img1 {
                 width:50px;
                 height: 50px;
+                margin-left: 40px;
             }
 
             .tile {
@@ -984,11 +985,11 @@
                 <div class="col-3">
                   <div class="form-group has-search mt-n1">
                     <span class="fa fa-map-marker form-control-feedback mt-n1"></span>
-                    <input type="text" style="font-size:12px;" class="form-control" placeholder="PIN Code"
+                    <input type="text" style="font-size:12px;" class="form-control" placeholder="Enter PIN Code"
                       style="border: 0px;">
                   </div>
                 </div>
-                <div class="col-2 mr-4 mt-n2">
+                <div class="col-2 mr-4 mt-n2 ">
                   <div class="d-flex ml-m2">
                     <div class="mt-sm-2">
                       <svg aria-hidden="true" focusable="false" height="1em" width="1em" data-prefix="far"
@@ -999,7 +1000,7 @@
                         </path>
                       </svg>
                     </div>
-                    <div class="mr-auto mt-sm-2 secure"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                    <div class="mr-auto secure"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Select Lab
                       </a>
@@ -1013,14 +1014,20 @@
                   </div>
                 </div>
                 <div class="col-6 mt-n2">
-                  <select class="search-bar mt-2" searchable="Search here..">
-                    <option value="" disabled selected>Search for tests, packages</option>
-                    <option value="1">Test1</option>
-                    <option value="2">Test1</option>
-                    <option value="3">Test1</option>
-                    <option value="3">Test1</option>
-                    <option value="3">Test1</option>
-                  </select>
+                   
+                    <div class="input-group mb-3 mt-1">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text border-0" id="basic-addon1" style="background-color: white; ">
+                            
+                            <svg aria-hidden="true" width="1em" height="1em" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control border-0" placeholder="Search for tests and packages" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                
+                
+                
+              
                 </div>
               </div>
             </div>
@@ -1153,7 +1160,7 @@
     </div>
     <h5 class="my-3">Diagnostics</h5>
     <div class="d-flex justify-content-between">
-      <div class="select border col-4 d-flex align-items-center">
+      <!--<div class="select border col-4 d-flex align-items-center">
         <div class="">
           <svg aria-hidden="true" focusable="false" height="1em" width="1em" data-prefix="far" data-icon="building"
             class="svg-inline--fa fa-building fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -1174,16 +1181,19 @@
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
-      </div>
-      <div class="col-8">
-        <select class="search-bar" searchable="Search here..">
-          <option value="" disabled selected>Search for tests, packages</option>
-          <option value="1">Test1</option>
-          <option value="2">Test1</option>
-          <option value="3">Test1</option>
-          <option value="3">Test1</option>
-          <option value="3">Test1</option>
-        </select>
+      </div>-->
+      <div class="col-12">
+       
+        <div class="input-group mb-3 mt-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text border-0" id="basic-addon1" style="background-color: white; ">
+                
+                <svg aria-hidden="true" width="1em" height="1em" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+              </span>
+            </div>
+            <input type="text" class="form-control border-0" placeholder="Search for tests and packages" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
       </div>
     </div>
   </div>
@@ -1220,7 +1230,7 @@
                         <img class="card-img-top crd-img1"
                             src="data:image/png;base64,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"
                             alt="Card image cap">
-                        <h6 class="mt-3 text-center r">Kidney profile</h6>
+                        <h6 class="mt-3 text-center r ">Kidney profile</h6>
                     </div>
                     <div class="col-lg-2 col-md-4 col-12 text-center">
                         <img class="card-img-top crd-img1"
@@ -1298,7 +1308,7 @@
 
             <div class="d-flex justify-content-between align-items-center pt-md-5">
                 <div class="pl-md-4 fsize frequent">Single Test</div>
-                <a href="#">View all</a>
+                <a class="mt-4" href="#">View all</a>
             </div>
             <div class="d-flex align-items-center pl-lg-4">
                 <small class="lab font-weight-bold">Laboratory available</small>
@@ -3296,8 +3306,8 @@
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToShow: 3,
+                        slidesToScroll: 3
                     }
                 }
             ]
